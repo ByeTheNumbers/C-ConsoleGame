@@ -7,6 +7,9 @@
 #include "Block.h"
 #include "CollisionSystemSingle.h"
 #include "Background.h"
+#include "SuperBlock.h"
+#include "List.h"
+#include "LetterNode.h"
 
 
 class GameSingle {
@@ -17,9 +20,11 @@ public:
 	void run();
 
 private:
-	void draw();
+	List line();
+	void draw(List Line);
 	void input();
 	void update();
+	void checkWin(List Line);
 	void clear();
 
 	bool running;
@@ -45,13 +50,16 @@ private:
 
 	Block *block1;
 	Block *block2;
-	//Block *block3;
-	//Block *block4;
-	//Block *block5;
-	//Block *block6;
-	//Block *block7;
-	//Block *block8;
-	//Block *block9;
+	Block *block3;
+//	Block *block4;
+//	Block *block5;
+//	Block *block6;
+//	Block *block7;
+//	Block *block8;
+//	Block *block9;
+
+	//SuperBlock *superBlock1;
+
 	CollisionSystemSingle *collisionSystem;
 
 public:

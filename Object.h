@@ -8,7 +8,7 @@ namespace Movement
 {
 	enum direction 
 	{
-		Up, Down, Left, Right
+		Up, Down, Left, Right, Stay_Still
 	};
 }
 
@@ -25,6 +25,9 @@ public:
 
 	int getXPos() const;
 	int getYPos() const;
+
+	char getLetter();
+	void setLetter(char input_letter);
 
 	//char letter;
 	//char getLetter() { return letter; }

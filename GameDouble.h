@@ -8,6 +8,9 @@
 #include "Block.h"
 #include "CollisionSystemDouble.h"
 #include "Background.h"
+#include "List.h"
+#include "LetterNode.h"
+#include "ListCollision.h"
 
 
 class GameDouble {
@@ -18,9 +21,11 @@ public:
 	void run();
 
 private:
-	void draw();
+	List line();
+	void draw(List Line);
 	void input();
 	void update();
+	void checkWin(List Line);
 	void clear();
 
 	bool running;
@@ -43,6 +48,18 @@ private:
 	Background *background10;
 	Background *background11;
 	Background *background12;
+
+	Background *background1a;
+	Background *background1b;
+	Background *background1c;
+
+	Background *background2a;
+	Background *background2b;
+	Background *background2c;
+
+	Background *background3a;
+	Background *background3b;
+	Background *background3c;
 	//Player *player;
 	//Block *block;
 
@@ -50,10 +67,10 @@ private:
 	Player *player2;
 	Block *block1;
 	Block *block2;
-	//Block *block3;
-	//Block *block4;
-	//Block *block5;
-	//Block *block6;
+	Block *block3;
+	Block *block4;
+	Block *block5;
+	Block *block6;
 	//Block *block7;
 	//Block *block8;
 	//Block *block9;

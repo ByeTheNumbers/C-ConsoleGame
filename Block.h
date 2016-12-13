@@ -2,7 +2,6 @@
 #define BLOCK_H
 
 #include"Object.h"
-
 class Block : public Object
 {
 public:
@@ -15,8 +14,16 @@ public:
 	void setCollisions(int c);
 	int getCollisions() const;
 
+	//void AddNode(int xpos, int ypos, char _letter);
+	//void PrintList();
+
 private:
 	int collisions;
+	//Block* next;
+
+//	Block* head;
+//	Block* curr;
+//	Block* temp;
 
 };
 

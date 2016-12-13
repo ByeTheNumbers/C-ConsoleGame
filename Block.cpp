@@ -5,7 +5,11 @@ Block::Block(int xpos, int ypos, char _letter) : Object(xpos, ypos)
 {
 	
 	letter = _letter;
-	
+	//TEST
+	//Block *next;
+	//head = NULL;
+	//curr = NULL;
+	//temp = NULL;
 }
 
 Block::~Block()
@@ -27,3 +31,4 @@ int Block::getCollisions() const
 {
 	return collisions;
 }
+

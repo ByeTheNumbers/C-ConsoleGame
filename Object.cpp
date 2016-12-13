@@ -35,3 +35,15 @@ int Object::getYPos() const
 {
 	return yPos;
 }
+
+char Object::getLetter()
+{
+	return letter;
+}
+
+void Object::setLetter(char input_letter)
+{
+	letter= input_letter;
+}
+
+

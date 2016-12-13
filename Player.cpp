@@ -32,6 +32,9 @@ void Player::update(Movement::direction d)
 		case Movement::Right:
 		xPos += 1;
 		break;
+		case Movement::Stay_Still:
+
+ 		break;
 	}
 }
 
